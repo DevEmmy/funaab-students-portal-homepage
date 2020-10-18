@@ -1,0 +1,171 @@
+body{
+    background: rgb(248,248,248);
+    margin: 0;
+}
+
+#header{
+    background: rgb(10,100,100);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+#head{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0;
+    font-family: verdana;
+    font-size: 30px;
+}
+
+#header ul{
+    list-style-type: none;
+    padding: 0 0 20px 20px
+}
+
+#header li{
+    display: inline;
+}
+
+#header li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    padding: 10px 20px;
+}
+
+#header li a:hover{
+    box-shadow: 0 5px 13px rgba(0,0,0,0.3);
+    -webkit-transition: .3s;
+}
+.login-btn{
+    padding: 10px 20px 0 90%;
+}
+
+.login-btn button{
+    background: rgb(10,100,100);
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.alerts{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5%;
+    width: 90%;
+}
+
+.alert{
+    margin-top: 20px;
+    padding: 20px;
+    background: rgb(100,100,100);
+    color: white;
+    font-family: verdana;
+    border-radius: 4px;
+}
+
+.alert a{
+    text-decoration: none;
+    color: rgb(10,100,100);
+    font-weight: bold;
+}
+
+.doc-detail{
+    width: 70%;
+    display: flex;
+    padding: 10px 15%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.doc-detail div{
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background: rgb(30,35,30);
+    font-family: verdana;
+}
+
+.doc-detail div button{
+    background: rgb(20,100,100);
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.informations{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 80%;
+    padding: 20px 10%;
+}
+
+.informations .details{
+    width: 45%;
+    margin-top: 30px;
+    font-family: verdana;
+    background: white;
+    border-radius: 5px;
+    border-top: 5px solid rgb(20,100,100);
+    box-shadow: 0 7px 16px rgba(0,0,0,0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.informations .details h1{
+    font-size: 20px;
+}
+
+footer{
+    background: rgb(20,100,100);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: verdana;
+    margin-top: 200px;
+}
+
+button:hover{
+    box-shadow: 0 5px 13px rgba(0,0,0,0.3);
+    -webkit-transition: .3s;
+}
+
+button:focus{
+    outline: none;
+}
+
+@media (max-width:460px){
+    #head{
+        font-size: 20px;
+    }
+
+    .login-btn{
+        padding: 0 0 0 70%;
+    }
+
+    .informations .details{
+        width: 100%;
+    }
+
+    .doc-detail div{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    footer{
+        margin-top: 50px;
+        font-size: 15px;
+        text-align: start;
+    }
+}
